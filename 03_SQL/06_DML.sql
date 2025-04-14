@@ -68,4 +68,6 @@ DELETE : 테이블의 행을 삭제
 
 -- comm_pct 가 null이고 job_id 가 IT_PROG인 직원들을 삭제
 
-
+use mydb;
+select * from customer;
+create database car_worldcup;
