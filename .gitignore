@@ -1,7 +1,11 @@
 api_key.json
 *.json
 *.txt
-
+*.xlsx
+*.zip
+*.csv
+*.bin
+*.model
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
