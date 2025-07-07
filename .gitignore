@@ -11,6 +11,7 @@ api_key.json
 *.env
 models/
 vector_store/
+*.sqlite3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
