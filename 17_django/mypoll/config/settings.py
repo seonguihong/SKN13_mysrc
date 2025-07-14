@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls',
+    'account',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+###############################
+# 사용자 정의 User 모델을 등록
+###############################
+AUTH_USER_MODEL = "account.User"  # AbstractUser 클래스를 등록.
+
+################################
+# 로그인 관련 설정
+################################
+# 로그인 하지 않은 사용자가 @login_required 인 View를 호출 했을 때 이동할 url을 지정.
+LOGIN_URL = '/account/login'
